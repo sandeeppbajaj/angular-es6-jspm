@@ -6,12 +6,9 @@ import MainConfig from './main.config';
 import MainController from './main.controller';
 import Home from '/modules/home/home.module';
 
-const main = angular.module('Main', [
-        Home.name,
-        'ui.router'
-      ])
-      .config(MainConfig)
-      .controller('MainController', MainController);
+const main = angular.module('Main', [Home.name, 'ui.router'])
+                    .config(MainConfig)
+                    .controller('MainController', MainController);
 
 export default main;
 

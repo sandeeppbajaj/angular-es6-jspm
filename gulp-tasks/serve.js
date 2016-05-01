@@ -10,7 +10,7 @@ gulp.task('serve',
     'browser-sync'
   ],
   function () {
-    gulp.watch('public/**/*.js').on('change', reload);
+    gulp.watch('public/**/*.js', 'eslint').on('change', reload);
     gulp.watch('**/*.css').on('change', reload);
     gulp.watch('**/*.tpl.html').on('change', reload);
   }
@@ -30,7 +30,9 @@ gulp.task('browser-sync',
 );
 
 gulp.task('nodemon',
-  [],
+  [
+    'eslint'
+  ],
   function (done) {
     var running = false;
 
