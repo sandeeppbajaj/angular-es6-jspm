@@ -9,8 +9,12 @@
   "author": "Sandeep Bajaj",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.12.5",
     "express": "^4.13.4",
-    "jspm": "^0.16.34"
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
+    "jspm": "^0.16.34",
+    "wrench": "^1.5.9"
   },
   "jspm": {
     "directories": {
