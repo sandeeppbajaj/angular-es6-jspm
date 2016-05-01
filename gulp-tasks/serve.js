@@ -10,7 +10,7 @@ gulp.task('serve',
     'browser-sync'
   ],
   function () {
-    gulp.watch('client/**/*.js').on('change', reload);
+    gulp.watch('public/**/*.js').on('change', reload);
     gulp.watch('**/*.css').on('change', reload);
     gulp.watch('**/*.tpl.html').on('change', reload);
   }
