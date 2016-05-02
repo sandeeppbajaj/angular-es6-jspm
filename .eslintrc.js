@@ -2,17 +2,23 @@ module.exports = {
     "env": {
         "browser": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "jasmine": true
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
+    "plugins": [
+      "jasmine"
+    ],
     "rules": {
         "indent": [2, 2],
         "linebreak-style": [2, "unix"],
         "quotes": [2, "single"],
-        "semi": [2, "always"]
+        "semi": [2, "always"],
+        "jasmine/missing-expect": [2, "expect()"]
     }
 };
