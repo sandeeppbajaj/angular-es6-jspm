@@ -3,7 +3,8 @@ module.exports = {
         "browser": true,
         "es6": true,
         "node": true,
-        "jasmine": true
+        "jasmine": true,
+        "protractor": true
     },
     "extends": "eslint:recommended",
     "parser": "babel-eslint",

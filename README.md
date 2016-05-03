@@ -4,14 +4,23 @@ Following BJANDERSON on youtube to create a project using AngularJS with es6 and
 
 #### Start ####
 ```
-npm install
-jspm install
+npm start
+gulp serve
 ```
 
 
 #### Unit Testing ####
 ```
-karma start
+npm run unit-tests
 ```
 
 Coverage report is generated as html at location coverage\index.html
+
+
+#### e2e Testing ####
+
+```
+webdriver-manager update
+webdriver-manager start
+npm run e2e-tests
+```
